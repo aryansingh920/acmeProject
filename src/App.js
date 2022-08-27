@@ -4,7 +4,7 @@ import Login from "./Login.jsx";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App m-5 p-1">
       <Login />
     </div>
   );
