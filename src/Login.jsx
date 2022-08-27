@@ -3,14 +3,14 @@ import "./Login.css";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import axios from "axios";
+import _ from "lodash"
 
 const Login = () => {
   const [email, setEmail] = useState("");
   // console.log(email);
 
   const functionCall = async () => {
-    email.charAt(0).toUpperCase()
-    const url = `https://signin.bindid-sandbox.io/authorize?client_id=bid_demo_acme&redirect_uri=https%3A%2F%2Fdemo.bindid-sandbox.io%2F_complete%2Facme&state=798105869&bindid_aux_link_title=More%20ways%20to%20verify&bindid_aux_link=https%3A%2F%2Fdemo.bindid-sandbox.io%2Fother_login&bindid_custom_message=Login%20to%20Acme&scope=openid%20bindid_network_info&display=page&prompt=login&response_type=code&login_hint=email%3${email}`;
+    const url = `https://signin.bindid-sandbox.io/authorize?client_id=bid_demo_acme&redirect_uri=https%3A%2F%2Fdemo.bindid-sandbox.io%2F_complete%2Facme&state=798105869&bindid_aux_link_title=More%20ways%20to%20verify&bindid_aux_link=https%3A%2F%2Fdemo.bindid-sandbox.io%2Fother_login&bindid_custom_message=Login%20to%20Acme&scope=openid%20bindid_network_info&display=page&prompt=login&response_type=code&login_hint=email%3A${(email)}`;
     console.log(url)
     const result = await axios
       .get(url,{headers: { 'Content-Type': 'application/json',
