@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/acmeProject/static/css/main.608dc82a.css",
+    "main.js": "/acmeProject/static/js/main.ce052809.js",
+    "static/js/787.3ca8457f.chunk.js": "/acmeProject/static/js/787.3ca8457f.chunk.js",
+    "static/media/acme.png": "/acmeProject/static/media/acme.a2e557abce7ba79a6c42.png",
+    "static/media/logo.svg": "/acmeProject/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/acmeProject/index.html",
+    "main.608dc82a.css.map": "/acmeProject/static/css/main.608dc82a.css.map",
+    "main.ce052809.js.map": "/acmeProject/static/js/main.ce052809.js.map",
+    "787.3ca8457f.chunk.js.map": "/acmeProject/static/js/787.3ca8457f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.608dc82a.css",
+    "static/js/main.ce052809.js"
+  ]
+}
